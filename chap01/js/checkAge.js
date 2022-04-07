@@ -1,7 +1,5 @@
 "use strict";
 
-let age;
-
 // function checkAge(a) {  //a는 매개변수 => 지역변수
 //     if(a >= 18) {
 //         return true;

@@ -6,7 +6,7 @@ let who = {
     nice_programmer : "yes"
 }
 
-who.subject = "javascript";
+who.subject = "Javascript";
 delete who.nice_programmer;
 
 console.log(who.nice_programmer);
