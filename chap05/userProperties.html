@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body id = "test" something = "non-standard">
+        <script>
+            document.body.myData = {
+                name : "Mirim", 
+                title : "Document Object Model"
+            };
+
+            alert(document.body.myData.title); //Document Object Model
+            alert(document.body.id); //test
+            alert(document.body.something); //undefined
+        </script>
+    </body>
+</html>

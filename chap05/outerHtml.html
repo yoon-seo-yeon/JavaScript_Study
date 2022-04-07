@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id = "elem">Hello<b>World</b></div>
+        <script>
+            /*
+            //1번의 경우 : html요소 자체를 바꾼다
+            let elem= document.getElementById("elem");
+            alert(elem.innerHTML);
+            elem.innerHTML = "<p>A new element</p>";
+            alert(elem.innerHTML);
+            */
+
+            //2번의 경우 : html요소를 바꾸지 않고 DOM 요소를 바꾼다
+            let elem= document.getElementById("elem");
+            alert(elem.outerHTML);
+            elem.innerHTML = "<p>A new element</p>";
+            alert(elem.outerHTML);
+        </script>
+    </body>
+</html>

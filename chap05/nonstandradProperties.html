@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id = "elem" about = "Elephant"></div>
+        <script>
+            alert(elem.getAttribute('about'));
+            elem.setAttribute('test', 1000);
+
+            for(let attr of elem.attributes) { //(4) 속성 전체(3개) 나열하기
+                alert(`${attr.name} = ${attr.value}`);
+            }
+        </script>
+    </body>
+</html>

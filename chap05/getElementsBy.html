@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>첫 번째 div</div>
+
+        <script>
+            let divs = document.getElementsByTagName('div');
+            alert(divs.length);
+        </script>
+
+        <div>두 번째 div</div>
+
+        <script>
+            alert(divs.length);
+        </script>
+
+
+
+        <div>첫 번째 div</div>
+
+        <script>
+            let divs1 = document.querySelectorAll('div');
+            alert(divs1.length);//3
+        </script>
+
+        <div>두 번째 div</div>
+
+        <script>
+            alert(divs1.length);//3
+        </script>
+
+    </body>
+</html>

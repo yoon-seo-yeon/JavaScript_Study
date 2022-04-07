@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+   <button id="elem">클릭해 주세요.</button> 
+    <script> 
+        class Menu { 
+            handleEvent(event) { 
+                switch(event.type) { 
+                    case 'mousedown': elem.innerHTML = "마우스 버튼을 눌렀습니다."; break;
+                    case 'mouseup': elem.innerHTML += " 그리고 버튼을 뗐습니다."; break; 
+                } 
+            } 
+        } 
+        let menu = new Menu();
+        elem.addEventListener('mousedown', menu);      
+        elem.addEventListener('mouseup', menu); 
+    </script>
+
+</body>
+</html>

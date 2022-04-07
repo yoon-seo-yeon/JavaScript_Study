@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href = "http://example.com/file.zip">...</a>
+        <a href = "http://ya.ru">...</a>
+
+        <script>
+            for(let elem of document.body.children) {
+                //[] : 괄호들 중 하나
+                //a로 시작하고 href를 포함하여 "zip으로 끝나는($) 요소"
+                if(elem.matches('a[href$="zip"]')) {
+                    alert("주어진 CSS 선택자와 일치하는 요소 : " + elem.href);
+                }
+            }
+        </script>
+    </body>
+</html>

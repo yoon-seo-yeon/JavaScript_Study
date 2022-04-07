@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        안녕하세요.
+        <!-- 여기는 주석 -->
+        <script>
+            let text = document.body.firstChild; //첫 노드 => 텍스트노드 "안녕하세요"
+            alert(text.data);
+        </script>
+
+        <div id = "news">
+            <h1> 주요 뉴스!</h1>
+            <p> 개발자 전성시대 도래</p>
+        </div>
+
+        <script>
+            //let news = document.getElementById("news"); -> 있어도 없어도 상관 없음
+            alert(news.textContent);
+        </script>
+
+        <div id = "elem1"></div>
+        <div id = "elem2"></div>
+
+        <script>
+            let name = prompt("이름을 알려주세요.", "<b>이보라</b>");
+
+            elem1.innerHTML = name;
+            //elem2.outerHTML = name;
+            elem2.textContent = name;
+        </script>
+
+        <div>아래 두 div를 숨겨봅시다</div>-+
+        <div hidden>HTML의 hidden 속성 사용하기</div>
+        <div id = "hid">자바스크립트의 hidden 프로퍼티 사용하기</div>
+
+        <script>
+            hid.hidden = true;
+        </script>
+    </body>
+</html>

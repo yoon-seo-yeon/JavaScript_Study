@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>목차</h1>
+
+        <div class = "contents">
+            <ul class = "book">
+                <li class = "chapter">1장</li>
+                <li class = "chapter">1장</li>
+            </ul>
+        </div>
+
+        <script>
+            let chapter = document.querySelector('.chapter');   //LI
+            alert(chapter.closest('.book'));    //ul
+            alert(chapter.closest('.contents'));    //div
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+   <input id="elem" type="button" value="클릭해 주세요">
+   <script>
+       let obj = {
+            handleEvent(event) {
+                alert(event.type + " : " + event.currentTarget);
+            }
+       }
+
+       elem.addEventListener("click", obj);
+   </script>
+</body>
+</html>

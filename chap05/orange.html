@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <a name = "list">
+            <ul>
+                <li><a href = "https://www.naver.com">www.naver.com</a></li>
+                <li><a href = "https://design.google">https://design.google</a></li>
+                <li><a href = "http://nodejs.org">http://nodejs.org</a></li>
+                <li><a href = "https://ko.javascript.info">https://ko.javascript.info</a></li>
+            </ul>
+        </a>
+        <script>
+            let links = document.querySelectorAll('a');
+
+            for(let link of links) {
+                let href = link.getAttribute('href');
+
+                if(!href) continue;
+                if(!href.includes('://')) continue;
+                if(href.startsWith('http://')) continue;
+
+                link.style.color = 'orange';
+            }
+        </script>
+    </body>
+</html>

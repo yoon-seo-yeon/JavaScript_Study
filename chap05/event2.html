@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="elem" type="button" value="클릭해 주세요."/>
+
+        <script>
+          function handler1() {
+            alert('감사합니다!');
+          };
+        
+          function handler2() {
+            alert('다시 한번 감사합니다!');
+          }
+        
+          elem.onclick = () => alert("안녕하세요.");
+          elem.addEventListener("click", handler1); // 감사합니다!
+          elem.addEventListener("click", handler2); // 다시 한번 감사합니다!
+        </script>
+    </body>
+</html>

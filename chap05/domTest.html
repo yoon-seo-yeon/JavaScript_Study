@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //배경을 붉은색으로 변경
+            document.body.style.background = "red";
+            // window.document.body.style.background = "red"; -> 원래는 앞에 window가 붙어있는 형태이나 없어도 실행 가능하다  
+
+            //1초 후 원상태로 복구
+            setTimeout(()=>document.body.style.background = "", 1000);
+        </script>
+    </body>
+</html>

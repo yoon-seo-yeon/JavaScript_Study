@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>프로퍼티를 연습합니다.</div>
+        <script>
+            let elem = document.body;
+            alert(elem.constructor.name);
+            alert(elem.nodeType); //1
+            alert(document.nodeType); //9
+            alert(document.body.nodeName); //BODY
+            elem.innerHTML = "글자1"; //글자1 사라짐
+            elem.innerHTML = "<h1>글자2</h1>"; //overwrite
+            elem.innerHTML += "<b>글자3<b>" //+= -> 앞에꺼랑 같이 출력 글자2, 글자3
+        </script>
+    </body>
+</html>

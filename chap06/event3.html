@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+   <input id="elem" type="button" value="클릭해 주세요">
+   <script>
+       function handler1() {
+           alert("thank you");
+       }
+
+       function handler2() {
+           alert("thank you, again!!");
+       }
+
+       elem.onclick = () => alert("hi");
+       elem.addEventListener("click", handler1);
+       elem.addEventListener("click", handler2);
+   </script>
+</body>
+</html>

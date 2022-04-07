@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table id ="table">
+            <tr>
+                <td>나이 : </td>
+                <td>
+                    <label><input type = "radio" name = "age", value="young" checked>18세 미만</label>
+                    <label><input type = "radio" name = "age", value="mature">18세 이상, 60세 미만</label>
+                    <label><input type = "radio" name = "age", value="senior">60세 이상</label>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            let inputs = table.getElementsByTagName("input");
+
+            for(let input of inputs) {
+                alert(input.value + " : " + input.checked);
+            }
+
+            if(inputs[0].value == "young") {
+                alert("미성년자");
+            }
+        </script>
+    </body>
+</html>
